@@ -30,14 +30,14 @@ def get_log_string(api_type, language):
     if language == "node":
         project_string = "Node.js"
         extension_string = ".js"
-        directory_string = "raccoon_node_server"
+        directory_string = "raccoon-node-server"
     elif language == "python":
         project_string = "Python"
         extension_string = ".py"
-        directory_string = "raccoon_python_server"
+        directory_string = "raccoon-python-server"
     else:
         project_string = "Go"
         extension_string = ".go"
-        directory_string = "raccoon_go_server"
+        directory_string = "raccoon-go-server"
 
     return f"{project_string} project setup complete in '{directory_string}/' with server{extension_string} configured for {api_type.capitalize()} API."
